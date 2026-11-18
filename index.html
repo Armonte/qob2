@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>THE QUEEN OF BATTLERS 2 — English</title>
+<meta name="description" content="THE QUEEN OF BATTLERS 2 by Kapurikon, in English, with online rollback play for Windows and Linux.">
+<meta property="og:title" content="THE QUEEN OF BATTLERS 2 — online for Windows and Linux">
+<meta property="og:description" content="Kapurikon's 2D team fighter with an English manual, rooms by code, rollback netplay, spectating and replays.">
+<meta property="og:image" content="manual/orig/qob2_top2.png">
+<style>
+:root{
+  --bg:#0c1220; --panel:#141c2e; --line:#26324a; --ink:#eef2fa; --dim:#9fb0cc;
+  --red:#e0242c; --orange:#ff9a1f; --sky:#69c6ff; --radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif}
+a{color:var(--sky)}
+img{max-width:100%;display:block}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+nav{position:sticky;top:0;z-index:5;background:rgba(12,18,32,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:18px;align-items:center;height:52px;overflow-x:auto;white-space:nowrap}
+nav b{color:var(--orange);letter-spacing:.04em}
+nav a{color:var(--dim);text-decoration:none;font-size:14px}
+nav a:hover{color:var(--ink)}
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);
+  background:radial-gradient(1200px 500px at 70% 0%,rgba(105,198,255,.25),transparent 60%),linear-gradient(180deg,#132443,#0c1220)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:32px;align-items:center;padding-top:40px;padding-bottom:40px}
+.hero img{border-radius:var(--radius);box-shadow:0 20px 60px rgba(0,0,0,.5)}
+h1{font-size:clamp(28px,5vw,46px);line-height:1.1;margin:0 0 12px;
+  background:linear-gradient(90deg,var(--orange),var(--red));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{color:var(--dim);font-size:18px;margin:0 0 22px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:11px 18px;border-radius:10px;text-decoration:none;font-weight:600;border:1px solid var(--line);color:var(--ink);background:var(--panel)}
+.btn.primary{background:linear-gradient(180deg,#ff3a40,#c4161e);border-color:#ff5a5f}
+.btn:hover{filter:brightness(1.12)}
+section{padding:44px 0;border-bottom:1px solid var(--line)}
+h2{font-size:26px;margin:0 0 16px}
+h2 small{display:block;font-size:13px;font-weight:500;color:var(--orange);letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.card h3{margin:0 0 6px;font-size:17px}
+.card p{margin:0;color:var(--dim);font-size:15px}
+.shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+.shots img{border-radius:10px;border:1px solid var(--line);aspect-ratio:4/3;object-fit:cover;width:100%}
+table{width:100%;border-collapse:collapse;font-size:15px}
+td,th{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{color:var(--dim);font-weight:500;width:38%}
+code{background:#0a0f1b;border:1px solid var(--line);border-radius:6px;padding:1px 6px;font-size:14px}
+.dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.dl .card a.btn{margin-top:12px}
+.news{list-style:none;padding:0;margin:0}
+.news li{display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px dashed var(--line)}
+.news time{color:var(--orange);font-variant-numeric:tabular-nums}
+footer{padding:28px 0 40px;color:var(--dim);font-size:14px}
+@media (max-width:760px){.hero .wrap{grid-template-columns:1fr}.hero img{order:-1}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <b>QOB2</b>
+  <a href="#about">About</a><a href="#online">Online</a><a href="#download">Download</a>
+  <a href="manual/index.html">Manual</a><a href="#shots">Screenshots</a><a href="#specs">Specs</a><a href="#credits">Credits</a>
+</div></div></nav>
+
+<header class="hero"><div class="wrap">
+  <div>
+    <h1>THE QUEEN OF BATTLERS 2</h1>
+    <p class="lede">Kapurikon's 2D team fighting game, now in English and playable online with rollback netcode on Windows and Linux.</p>
+    <div class="btns">
+      <a class="btn primary" href="https://github.com/Armonte/qob2/releases/latest">Download</a>
+      <a class="btn" href="manual/index.html">English manual</a>
+      <a class="btn" href="http://moon.tiyogami.com/qob2/index.html">Original site (JP)</a>
+    </div>
+  </div>
+  <img src="manual/orig/qob2_top2.png" alt="THE QUEEN OF BATTLERS II key art" width="793" height="584">
+</div></header>
+
+<main>
+<section id="about"><div class="wrap">
+  <h2><small>The game</small>A team fighter where the next fighter steps in</h2>
+  <p>Pick a team and fight one on one. When a fighter falls, the next one on the team steps in, and the side that runs out of fighters loses. A winner recovers some health before the next bout. Teammates waiting on the sidelines can jump in with an assist attack when you are dizzied or caught in a grab.</p>
+  <div class="grid">
+    <div class="card"><h3>Arcade</h3><p>Team battles against the CPU, with difficulty set in Options.</p></div>
+    <div class="card"><h3>Team Play</h3><p>Two players, team against team, on one machine.</p></div>
+    <div class="card"><h3>Training</h3><p>Set life, POW gauge, dummy action, guard, recovery and key display. F1–F7 shortcuts.</p></div>
+    <div class="card"><h3>POW gauge</h3><p>Fills as you attack, take hits or guard. When full, your attack rises for a while and supers unlock.</p></div>
+  </div>
+</div></section>
+
+<section id="online"><div class="wrap">
+  <h2><small>This edition</small>What the new runtime adds</h2>
+  <div class="grid">
+    <div class="card"><h3>Online rooms</h3><p>Host a room and share its code, join by code, or pick a public room from the list.</p></div>
+    <div class="card"><h3>Rollback netcode</h3><p>GekkoNet rollback with input delay you can set. Both players run the same simulation from inputs alone.</p></div>
+    <div class="card"><h3>Spectate and replays</h3><p>Watch a room live by its code, and play back recorded matches.</p></div>
+    <div class="card"><h3>Windows and Linux</h3><p>Native builds for both, and they play each other online.</p></div>
+    <div class="card"><h3>English throughout</h3><p>The menus and a full English manual, with every character's moves.</p></div>
+    <div class="card"><h3>Modern controls</h3><p>Keyboard and any pad, rebindable in game. F2 (or Start + Select) opens settings.</p></div>
+  </div>
+</div></section>
+
+<section id="download"><div class="wrap">
+  <h2><small>Download</small>Get the game</h2>
+  <p>Each download holds the game and the new runtime. Unpack it anywhere and run it. No install.</p>
+  <div class="dl">
+    <div class="card"><h3>Windows</h3><p>Windows 7 or later. Run <code>qob2.exe</code>.</p>
+      <a class="btn primary" href="https://github.com/Armonte/qob2/releases/latest">Windows 7z</a></div>
+    <div class="card"><h3>Linux</h3><p>x86-64. Unpack and run <code>./qob2</code>. See the README inside for the packages it needs.</p>
+      <a class="btn primary" href="https://github.com/Armonte/qob2/releases/latest">Linux 7z</a></div>
+  </div>
+  <p style="margin-top:18px">Support the original authors: <a href="https://www.dlsite.com/home/work/=/product_id/RJ199263.html">THE QUEEN OF BATTLERS 2 on DLsite</a>.</p>
+</div></section>
+
+<section id="manual"><div class="wrap">
+  <h2><small>Manual</small>The English manual</h2>
+  <p>The original manual, translated, with the system screens, all fighters and their command lists.</p>
+  <div class="btns"><a class="btn" href="manual/index.html">Open the manual</a><a class="btn" href="manual/system1.html">System</a><a class="btn" href="manual/char1.html">Characters</a></div>
+</div></section>
+
+<section id="shots"><div class="wrap">
+  <h2><small>Screenshots</small>In game</h2>
+  <div class="shots">
+    <img loading="lazy" src="manual/orig/qob2_ss1.jpg" alt="Screenshot 1" width="640" height="480">
+    <img loading="lazy" src="manual/orig/qob2_ss4.jpg" alt="Screenshot 2" width="640" height="480">
+    <img loading="lazy" src="manual/orig/qob2_ss8.jpg" alt="Screenshot 3" width="640" height="480">
+    <img loading="lazy" src="manual/orig/qob2_ss12.jpg" alt="Screenshot 4" width="640" height="480">
+    <img loading="lazy" src="manual/orig/qob2_ss16.jpg" alt="Screenshot 5" width="640" height="480">
+    <img loading="lazy" src="manual/orig/qob2_ss20.jpg" alt="Screenshot 6" width="640" height="480">
+  </div>
+  <p><a href="manual/shots.html">All screenshots</a></p>
+</div></section>
+
+<section id="specs"><div class="wrap">
+  <h2><small>Specs</small>Original requirements</h2>
+  <table>
+    <tr><th>OS</th><td>Windows XP / 7 (this edition: Windows 7 or later, or Linux x86-64)</td></tr>
+    <tr><th>CPU</th><td>Pentium 4 1.5 GHz or better</td></tr>
+    <tr><th>Memory</th><td>512 MB or more</td></tr>
+    <tr><th>Disk</th><td>500 MB or more</td></tr>
+    <tr><th>Graphics</th><td>DirectX 8 or later, 640×480</td></tr>
+    <tr><th>Music</th><td>Ogg</td></tr>
+    <tr><th>Gamepad</th><td>DirectInput (this edition: any SDL-supported pad)</td></tr>
+  </table>
+</div></section>
+
+<section id="news"><div class="wrap">
+  <h2><small>History</small>From the original site</h2>
+  <ul class="news">
+    <li><time>—</time><span>Patch v1.07: Asa's throw, Kaede's Mangetsu-giri invincibility, Cineraria's Jet Smash, new win poses for Kud and Mifuyu (tournament prize), and buffs for weaker characters.</span></li>
+    <li><time>03/31</time><span>Patch v1.06 released.</span></li>
+    <li><time>03/16</time><span>Patch v1.05 released.</span></li>
+    <li><time>03/04</time><span>Some hidden-character info added to CHARACTER.</span></li>
+    <li><time>02/18</time><span>Patch v1.04 released.</span></li>
+    <li><time>01/28</time><span>Patch v1.03 released.</span></li>
+    <li><time>01/05</time><span>Happy new year! Patch v1.02 released.</span></li>
+    <li><time>12/29</time><span>Release day.</span></li>
+    <li><time>12/28</time><span>Patch v1.01 released; trial version updated.</span></li>
+    <li><time>12/02</time><span>Trial version added.</span></li>
+    <li><time>08/29</time><span>Site opened.</span></li>
+  </ul>
+</div></section>
+
+<section id="credits"><div class="wrap">
+  <h2><small>Credits</small>Made by Kapurikon (かぷりこーん)</h2>
+  <table>
+    <tr><th>Pixel art, programming</th><td>愛良 (Aira)</td></tr>
+    <tr><th>Illustration</th><td>ZEN · spiral (from the previous game)</td></tr>
+    <tr><th>Backgrounds</th><td>けいまるスタジオ (Keimaru Studio) · 安田大輔 (Daisuke Yasuda), spiral (from the previous game)</td></tr>
+    <tr><th>Music</th><td>K.Kurusu</td></tr>
+    <tr><th>System voice</th><td>桃箱 (Momobako)</td></tr>
+    <tr><th>Sound effects</th><td>みそか (Misoka) · ザ・マッチメイカァズ2nd (The Matchmakers 2nd)</td></tr>
+    <tr><th>PV</th><td>GORILLAFILM</td></tr>
+    <tr><th>This edition</th><td>New runtime, online play, English text and manual: <a href="https://povertycaster.com">PovertyCaster</a></td></tr>
+  </table>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  THE QUEEN OF BATTLERS 2 © Kapurikon. Original site: <a href="http://moon.tiyogami.com/qob2/index.html">moon.tiyogami.com/qob2</a>.
+  Redistributed with the authors' permission. English edition by <a href="https://povertycaster.com">PovertyCaster</a>.
+</div></footer>
+</body>
+</html>
